@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>maimai</title>
+	<link rel="stylesheet" href="css/gg.css">
+	<link rel="stylesheet" href="css/mai1.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=0">
+	<script>
+    window.onload = window.onresize = function(){		 
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+		//找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+		//如果屏幕宽度大于640 
+		//就用 640/16=40
+		//小于640的时候 不确定 也是尺寸/40
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+		//最大网页尺寸640 
+		//最大字体（根字体大小） 40
+    }
+</script>
+	
+</head>
+<body>
+
+<!-- rem在线转换
+http://mxd.tencent.com/wp-content/uploads/2014/11/rem.html
+ -->
+		<header>
+			<div class="hd_top clearfix">
+				<span class="iconfont fl">&#xe78a;</span>
+				<h5 class="fl">Woman, Dresses</h5>
+				<span class="iconfont fr">&#xe7e7;<i>3</i></span>
+			</div>
+			<div class="hd_btm clearfix">
+				<a href="#" class="btn1 fl">ADD TO WISHLIST</a>
+				<a href="#" class="btn2 fr">ADD TO CART</a>
+			</div>
+		</header>
+
+
+		<div class="banner">
+			<img src="image/mai1.png" alt="">
+			<div class="money clearfix">
+				<p class="fl btn4">Elegant Pink Dresses</p>
+				<p class="fr btn3">$605,00</p>
+			</div>
+		</div>
+
+		<div class="ct1">
+			<div class="nav1 clearfix">
+				<p class="iconfont fl cp1">&#xe606;</p>
+				<p class=" fl cp2">Description</p>
+			</div>
+		</div>
+
+		<div class="ct2">
+			<div class="nav2 clearfix">
+				<p class="np1"> <img src="image/mai2.png" alt=""> Colour:</p>
+				<p class="np11">Choose a colour for item</p>
+				<img src="image/mai3.png" alt="" class="img1 fl" style="margin-left:2.5rem;">
+				<img src="image/mai4.png" alt="" class="img1 fl">
+				<img src="image/mai5.png" alt="" class="img1 fl">
+			</div>
+			<div class="nav3 clearfix">
+				<p class="np2"> <img src="image/mai10.png" alt=""> Size:</p>
+				<p class="np21">Size available for this item</p>
+				<ul>
+					<li class="fl">6</li>
+					<li class="fl">8</li>
+					<li class="fl">10</li>
+					<li class="fl">12</li>
+					<li class="fl" style="margin-right: 0;">14</li>
+				</ul>
+			</div>
+		</div>
+
+		<a href="#" class="a1">ADD TO CART</a>
+
+		<div class="ct3">
+			<p class="fl">SHARE ON <img src="image/mai11.png" alt="" class="fr"></p>
+		</div>
+
+		<div class="btm clearfix">
+			<div class="nav4 fl">
+				<img src="image/mai6.png" alt="" class="img2 fl">
+				<img src="image/mai9.png" alt="" class="img3 fl">
+				<p>205</p>
+			</div>
+			<div class="nav4 fl">
+				<img src="image/mai7.png" alt="" class="img2 fl">
+				<img src="image/mai9.png" alt="" class="img3 fl">
+				<p>205</p>
+			</div>
+			<div class="nav5 fl">
+				<img src="image/mai8.png" alt="" class="img2 fl">
+				<img src="image/mai9.png" alt="" class="img3 fl">
+				<p>205</p>
+			</div>
+		</div>
+
+
+</body>
+</html>
